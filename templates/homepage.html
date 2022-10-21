@@ -7,10 +7,49 @@
   <h1>Welcome!</h1>
 
   <h2>Navigation</h2>
-
   <ul>
     <li><a href="/movies">View all movies</a></li>
     <li><a href="/users">View all users</a></li>
   </ul>
+
+  <h2>Create an Account</h2>
+
+  <form class="row g-3" action="/users" method="POST">
+
+    <div class="col-auto">
+      <label>Email</label>
+      <input type="text" name="email" placeholder="email@email.com" class="form-control">
+  </div>
+
+  <div class="col-auto">
+    <label>Password</label>
+
+    <input type="password" name="password" placeholder="Type your password" class="form-control">
+
+  </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+
+  </form>
+
+  <br>
+
+  <h2>Log In</h2>
+
+  <form class="row g-3" action="/login" method="POST">
+    <div class="col-auto">
+      Email <input type="text" name="email" placeholder="email@email.com" class="form-control">
+    </div>
+
+    <div class="col-auto">
+      Password <input type="password" name="password" placeholder="email@email.com" class="form-control">
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Submit</button>
+    </div>
+  </form>
 
 {% endblock %}
